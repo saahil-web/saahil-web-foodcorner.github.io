@@ -123,6 +123,17 @@ h3{
     color: white;
 }
 
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    margin-top: 10%;
+    padding-left: 13px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
 @media (max-width: 720px){
     body{
         background-image: url("Images/mobile.jpg");
@@ -142,5 +153,9 @@ h3{
 
     .hamburger-menu{
         display: block;
+    }
+
+    footer{
+        margin-top: 43.5%;
     }
 }
