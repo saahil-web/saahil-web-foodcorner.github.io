@@ -1,0 +1,84 @@
+body{
+    background-image: url("Images/348943-4k-wallpaper.jpg");
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+li{
+    display: inline;
+    float: left;
+}
+
+nav ul{
+    margin-top: 1.5%;
+    padding: 0%;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+ li a{
+    display: block;
+    color: white;
+    padding: 18px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-logo{
+    padding: 14px 16px;
+}
+
+.nav-links::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: cyan;
+    transition: width .3s;
+}
+
+.nav-links:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: cyan;
+}
+
+.right{
+    float: right;
+}
+
+.signin{
+    border: 1px solid cyan;
+    padding: 14px 20px;
+    border-radius: 3px;
+    margin: 5px;
+    transition-duration: 0.3s;
+}
+
+.signin:hover{
+    background-color: cyan;
+    color: black;
+}
+
+.signup{
+    border: 1px solid cyan;
+    padding: 14px 20px;
+    border-radius: 3px;
+    background-color: cyan;
+    margin: 5px;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.signup:hover{
+    background-color: transparent;
+    color: white;
+}
