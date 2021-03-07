@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="Javascript/app.js"></script>
     <title>The Food Corner</title>
 </head>
 <body>
@@ -20,13 +21,28 @@
         <li><a href="#" class="active">Home</a></li>
         <li><a href="menu.html" class="nav-links">Menu</a></li>
         <li><a href="#" class="nav-links">Catering</a></li>
-        <li><a href="#" class="nav-links">About</a></li>
+        <li><a href="about.html" class="nav-links">About</a></li>
         <li><a href="#" class="nav-links">Location</a></li>
         <li class="right"><a href="#" class="signup">Sign Up</a></li>
         <li class="right"><a href="#" class="signin">Sign In</a></li>
-        <li class="right"><a href="#" class="hamburger-menu"><i class="fas fa-bars"></i></a></li>
+        <li class="right"><a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a></li>
+        <li class="right"><a href="#" class="hamburger-menu" onclick="openNav()"><i class="fas fa-bars"></i></a></li>
     </ul>
     </div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Catering</a>
+          <a href="#">About</a>
+          <a href="#">Location</a>
+        </div>
+      </div>
     <div class="container">
         <h1>It's that simple</h1>
         <h4>FEATURING OUR SPECIALS!</h4>
@@ -35,5 +51,6 @@
     <footer>
         <p> <i class="far fa-copyright"></i>|All Right Reserved|S&A Web Developers - 2021</p>
     </footer>
+    <!--Index Page Completed-->
 </body>
 </html>

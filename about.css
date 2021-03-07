@@ -1,0 +1,104 @@
+body{
+    background-image: url("Images/about.jpg");
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+li{
+    display: inline;
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+.nav-logo{
+    padding: 14px 20px;
+}
+
+.nav-links::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: lime;
+    transition: .3s; /* For animation */
+}
+
+.nav-links:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+
+.active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: lime;
+}
+
+.signup{
+    border: 1px solid lime;
+    border-radius: 3px;
+    padding: 14px 20px;
+    margin: 5px;
+    transition-duration: 0.3s;
+}
+
+.signup:hover{
+    background-color: lime;
+    color: black;
+}
+
+.signin{
+    background-color: lime;
+    border-radius: 3px;
+    padding: 14px 20px;
+    margin: 5px;
+    color: black;
+    border: 1px solid lime;
+    transition-duration: .3s;
+}
+
+.signin:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid lime;
+}
+
+.right{
+    float: right;
+}
+
+.container{
+    text-align: center;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    margin-top: 9.25%;
+    padding-left: 13px;
+}
+
+@media(max-width: 720px){
+   body{
+       background-image: url("Images/4622433.jpg");
+   }
+}
