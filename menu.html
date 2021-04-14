@@ -8,20 +8,89 @@
     <link rel="stylesheet" href="menu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="Javascript/app.js"></script>
     <title>Menu - The Food Corner</title>
 </head>
 <body>
-    <nav class="navigation-bar">
-        <li><a href="#" class="nav-logo">
-            <img src="Images/nav-logo.png" height="50" width="50" alt="">
-        </a></li>
-        <li><a href="index.html" class="nav-links">Home</a></li>
-        <li><a href="#" class="active">Menu</a></li>
-        <li><a href="#" class="nav-links">Catering</a></li>
-        <li><a href="about.html" class="nav-links">About</a></li>
-        <li><a href="#" class="nav-links">Location</a></li>
-        <li class="right"><a href="#" class="signup">Sign Up</a></li>
-        <li class="right"><a href="#" class="signin">Sign In</a></li>
-    </nav>
+    <div class="navbar">
+        <ul>
+            <li><a href="#" class="nav-logo">
+                <img src="Images/nav-logo.png" height="50" width="50" alt="">
+            </a></li>
+            <li><a href="index.html" class="nav-links">Home</a></li>
+            <li><a href="#" class="active">Menu</a></li>
+            <li><a href="#" class="nav-links">Catering</a></li>
+            <li><a href="about.html" class="nav-links">About</a></li>
+            <li><a href="#" class="nav-links">Location</a></li>
+            <li class="right"><a href="#" class="signup">Sign Up</a></li>
+            <li class="right"><a href="#" class="signin">Sign In</a></li>
+            <li class="right"><a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="right"><a href="#" class="hamburger-menu" onclick="openNav()"><i class="fas fa-bars"></i></a></li>
+        </ul>
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="#">Menu</a>
+              <a href="#">Catering</a>
+              <a href="about.html">About</a>
+              <a href="#">Location</a>
+            </div>
+          </div>
+          <h1>Menu</h1>
+          <div class="margin-part">
+            <div class="square">
+                <a href="#" class="hover-effect">
+                    <img class="image" src="Menu/xs.png" width="320" height="180">
+                </a>
+            </div>
+            <div class="square">
+                <a href="#" class="hover-effect">
+                    <img class="image" src="Menu/xs (3).png" width="320" height="180">
+                </a>
+            </div>
+            <div class="square">
+                <a href="#" class="hover-effect">
+                    <img class="image" src="Menu/xs (4).png" width="320" height="180">
+                </a>
+            </div>
+            <div class="square">
+                <a href="#" class="hover-effect">
+                    <img class="image" src="Menu/xs (5).png" width="320" height="180">
+                </a>
+            </div>
+            <br>
+            <div class="square">
+                <a href="#" class="hover-effect">
+                    <img class="image" src="Menu/xs (6).png" width="320" height="180">
+                </a>
+            </div>
+            <div class="square">
+                <a href="#" class="hover-effect">
+                    <img class="image" src="Menu/xs (7).png" width="320" height="180">
+                </a>
+            </div>
+            <div class="square">
+                <a href="#" class="hover-effect">
+                    <img class="image" src="Menu/xs (8).png" width="320" height="180">
+                </a>
+            </div>
+            <div class="square">
+                <a href="#" class="hover-effect">
+                    <img class="image" src="Menu/xs (9).png" width="320" height="180">
+                </a>
+            </div>
+        </div>
+            <br>
+    <div>
+            <footer>
+                <p> <i class="far fa-copyright"></i>|All Right Reserved|S&A Web Developers - 2021</p>
+            </footer>
+    </div>
 </body>
 </html>

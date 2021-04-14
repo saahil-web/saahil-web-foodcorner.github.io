@@ -1,5 +1,5 @@
 body{
-    background-image: url("Images/about.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/about.jpg");
     background-size: cover;
     font-family: 'Raleway', sans-serif;
 }
@@ -170,7 +170,7 @@ footer{
     padding: 3px;
     background-color: black;
     color: white;
-    margin-top: 12.4%;
+    margin-top: 8.9%;
     padding-left: 13px;
 }
 

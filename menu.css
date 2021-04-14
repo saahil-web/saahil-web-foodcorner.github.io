@@ -4,16 +4,16 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
 li{
     display: inline;
     float: left;
-}
-
-ul{
-    margin-top: 1.5%;
-    padding: 0%;
-    overflow: hidden;
-    list-style-type: none;
 }
 
  li a{
@@ -55,30 +55,166 @@ ul{
     float: right;
 }
 
-.signin{
-    border: 1px solid cyan;
-    padding: 14px 20px;
-    border-radius: 3px;
-    margin: 5px;
-    transition-duration: 0.3s;
-}
-
-.signin:hover{
-    background-color: cyan;
-    color: black;
-}
-
 .signup{
     border: 1px solid cyan;
     padding: 14px 20px;
     border-radius: 3px;
+    margin: 5px;
+    transition-duration: 0.3s;
+}
+
+.signup:hover{
+    background-color: cyan;
+    color: black;
+}
+
+.signin{
+    border: 1px solid cyan;
+    padding: 14px 20px;
+    border-radius: 3px;
     background-color: cyan;
     margin: 5px;
     color: black;
     transition-duration: 0.3s;
 }
 
-.signup:hover{
+.signin:hover{
     background-color: transparent;
     color: white;
+}
+
+.hamburger-menu{
+    border: 1px solid cyan;
+    padding: 14px 20px;
+    border-radius: 3px;
+    background-color: cyan;
+    margin: 5px;
+    color: black;
+    transition: .3s;
+    display: none;
+}
+
+.hamburger-menu:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.cart{
+    border: 1px solid cyan;
+    padding: 14px 20px;
+    border-radius: 3px;
+    margin: 5px;
+    transition: .3s;
+}
+
+.cart:hover{
+    background-color: cyan;
+    color: black;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.xs{
+    border: 1px solid transparent;
+}
+
+.square{
+    float: left;
+    margin: 20px;
+    padding-left: 4.75%;
+}
+
+.image{
+    border-radius: 20px;
+}
+
+.margin-part{
+    margin-top: 5.5%;
+}
+
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    margin-top: 28.9%;
+    padding-left: 13px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+@media(max-width:720px){
+    body{
+        background-image: url("Images/menu-mobile.jpg");
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .active{
+        display: none;
+    }
+
+    .signin{
+        display: none;
+    }
+
+    .signup{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
 }
